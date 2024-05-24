@@ -23,7 +23,7 @@
 
 INPUT: dxn matrix 
 
-* STL-10 (HOG): This process is shown in [(STL-10)]([https://pages.github.com/](https://github.com/mttk/STL10)).
+* STL-10 (HOG): This process is shown in [(STL-10)](https://github.com/mttk/STL10).
 
 * Yale (HOG): This process is shown in [(Yale-FaceRecognition)](https://github.com/chenshen03/Yale-FaceRecognition). Raw data is uploaded as "yale_hog.npy".
 
