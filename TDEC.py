@@ -1,22 +1,15 @@
 #!/data/users/zhouk/software/anaconda3/bin/python3
 import numpy as np
-import pandas as pd
-import os
-os.chdir("./data") #your path
+#import pandas as pd
+#import os
+#os.chdir("./data") #your path
 import torch
-#import torch.nn as nn
-#import torch.nn.functional as F
 from metrics import cal_clustering_metric
-#from scipy.sparse import coo_matrix
-#from sklearn.cluster import k_means
-import scipy.io as scio
 import random
 import data_loader as loader
 import time
-#from scipy.spatial import ConvexHull
-#from itertools import combinations
-#import seaborn as sns
-#from sklearn.decomposition import PCA
+import warnings
+warnings.filterwarnings('ignore')
 
 def makeF(c, type=['simple', 'full', 'pairs'], pairs=None, Omega=True):
     if type == 'full':  # All the 2^c focal sets
