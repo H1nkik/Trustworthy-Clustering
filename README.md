@@ -1,4 +1,4 @@
-![Static Badge](https://img.shields.io/badge/Author-Yuchen_Zhu-blue)
+![Static Badge](https://img.shields.io/badge/Author-H1nkik-blue)
 ![Static Badge](https://img.shields.io/badge/Code-Python-8A2BE2)
 
 # -TDEC- 
