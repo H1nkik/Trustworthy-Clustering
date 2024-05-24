@@ -1,4 +1,5 @@
-# -TDEC-
+![Static Badge](https://img.shields.io/badge/Author%20Yuchen%20Zhu)
+# -TDEC- 
 ## Preparation
 **Enviroment**
 
@@ -22,13 +23,13 @@ INPUT: dxn matrix
 
 * STL-10 (HOG): This process is shown in [(https://pages.github.com/)](https://pages.github.com/).
 
-* Yale : This process is shown in [(Yale-FaceRecognition)](https://github.com/chenshen03/Yale-FaceRecognition). Raw data is uploaded as "yale_hog.npy".
+* Yale (HOG): This process is shown in [(Yale-FaceRecognition)](https://github.com/chenshen03/Yale-FaceRecognition). Raw data is uploaded as "yale_hog.npy".
 
-* Others: Shown in "Data process.ipynb".
+* Others: Shown in `Data process.ipynb`.
 
 ## Usage
 We provide a GPU/CPU version for MacOS and Linux (Unknown for Windows).
 
-Just `python TDEC.py`. 
+Just `python TDEC.py` . 
 
 Or submit `TDEC.sh`.
