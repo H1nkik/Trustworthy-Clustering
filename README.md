@@ -1,4 +1,5 @@
-![Static Badge](https://img.shields.io/badge/Author%20Yuchen%20Zhu)
+![Static Badge](https://img.shields.io/badge/Author-Yuchen_Zhu-blue)
+
 # -TDEC- 
 ## Preparation
 **Enviroment**
