@@ -1,6 +1,6 @@
 # -TDEC-
 
 ## Preparation
-** Enviroment **
+**Enviroment**
 
-** Data **
+**Data**
