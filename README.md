@@ -1,28 +1,30 @@
 # -TDEC-
 ## Preparation
 **Enviroment**
-Python == 3.8.8
 
-cuda == 11.0
+*Python == 3.8.8
 
-torch == 1.7.1+cu110
+*cuda == 11.0
 
-numpy == 1.24.3
+*torch == 1.7.1
 
-scikit-learn == 1.3.0
+*numpy == 1.24.3
 
-pandas == 2.0.3
+*scikit-learn == 1.3.0
 
-munkres == 1.1.4 (optional)
+*pandas == 2.0.3
+
+*munkres == 1.1.4 (optional)
 
 **Data**
+
 INPUT: dxn matrix 
 
-STL-10 (HOG): This process is shown in [(https://pages.github.com/)](https://pages.github.com/).
+*STL-10 (HOG): This process is shown in [(https://pages.github.com/)](https://pages.github.com/).
 
-Yale : This process is shown in [(Yale-FaceRecognition)](https://github.com/chenshen03/Yale-FaceRecognition). Raw data is uploaded as "yale_hog.npy".
+*Yale : This process is shown in [(Yale-FaceRecognition)](https://github.com/chenshen03/Yale-FaceRecognition). Raw data is uploaded as "yale_hog.npy".
 
-Others: Shown in "Data process.ipynb".
+*Others: Shown in "Data process.ipynb".
 
 ## Usage
 We provide a GPU/CPU version for MacOS and Linux (Unknown for Windows).
