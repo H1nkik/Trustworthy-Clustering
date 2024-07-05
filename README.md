@@ -30,7 +30,7 @@ INPUT: dxn matrix
 * Others: Shown in `Data process.ipynb`.
 
 ## Usage
-We provide a GPU/CPU version for MacOS and Linux (Unknown for Windows).
+We provide a GPU&CPU version for MacOS and Linux (Unknown for Windows).
 
 Just `python TDEC.py` . 
 
