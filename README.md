@@ -2,6 +2,8 @@
 ![Static Badge](https://img.shields.io/badge/Code-Python-8A2BE2)
 
 # -TDEC- 
+“To know what you know and what you do not know, that is true knowledge”
+--- Chinese saying
 ## Preparation
 **Enviroment**
 
