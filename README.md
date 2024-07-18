@@ -5,7 +5,7 @@
 
 
 # -TDEC- 
-_“To know what you know and what you do not know, that is true knowledge”_  --- Chinese saying
+_“To know what you know and what you do not know, that is true knowledge”_  --- famous saying
 ## Preparation
 **Enviroment**
 
