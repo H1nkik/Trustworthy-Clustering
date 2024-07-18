@@ -1,5 +1,8 @@
 ![Static Badge](https://img.shields.io/badge/Author-H1nkik-blue)
 ![Static Badge](https://img.shields.io/badge/Code-Python-8A2BE2)
+![Static Badge](https://img.shields.io/badge/AAAI2025-brightgreen)
+
+
 
 # -TDEC- 
 _“To know what you know and what you do not know, that is true knowledge”_  --- Chinese saying
