@@ -9,6 +9,7 @@ import random
 import data_loader as loader
 import time
 import warnings
+from tqdm import tqdm
 warnings.filterwarnings('ignore')
 
 def makeF(c, type=['simple', 'full', 'pairs'], pairs=None, Omega=True):
@@ -329,7 +330,7 @@ class DeepEvidentialCMeans(torch.nn.Module):
         optimizer = torch.optim.Adam(self.parameters(), lr=self.lr)
         scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.8)
         loss = 0
-        for epoch in range(20):
+        for epoch in tqdm(range(20)):
             D = self._update_D(Z, self.gplus) #Distance
             for i, batch in enumerate(train_loader):#enumerate
                 x, idx = batch
