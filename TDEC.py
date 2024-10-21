@@ -446,7 +446,7 @@ labels +=1
         
 
 start_time = time.time()
-dnecm = DeepEvidentialCMeans(data, labels, [data.shape[0], 128, 80], lam=0.01, type='pairs',alpha=1, beta=1.1, delta2=9, batch_size=128, lr=10**-4)
-dnecm.run()
+tdec = DeepEvidentialCMeans(data, labels, [data.shape[0], 128, 80], lam=0.01, type='pairs',alpha=1, beta=1.1, delta2=9, batch_size=128, lr=10**-4)
+tdec.run()
 end_time = time.time()
 print("Time: {:.2f} s".format(end_time - start_time))        
