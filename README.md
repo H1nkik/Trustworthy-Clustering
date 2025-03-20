@@ -1,6 +1,6 @@
 ![Static Badge](https://img.shields.io/badge/Clustering-blue)
 ![Static Badge](https://img.shields.io/badge/Code-Python-8A2BE2)
-![Static Badge](https://img.shields.io/badge/AAAI2025-brightgreen)
+
 
 
 
