@@ -1,5 +1,5 @@
-![Static Badge](https://img.shields.io/badge/Clustering-blue)
-![Static Badge](https://img.shields.io/badge/Code-Python-8A2BE2)
+![Static Badge](https://img.shields.io/badge/Deep_Clustering-blue)
+![Static Badge](https://img.shields.io/badge/Code-PyTorch-8A2BE2)
 
 
 
@@ -39,3 +39,7 @@ We provide a GPU&CPU version for MacOS and Linux (Unknown for Windows).
 Just `python TDEC.py` . 
 
 Or submit `TDEC.sh`.
+
+## Acknowledgement
+We thank for their codes of [(DFKM)](https://github.com/hyzhang98/DFKM) providing NN architecture.
+
