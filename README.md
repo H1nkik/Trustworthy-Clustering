@@ -41,5 +41,5 @@ Just `python TDEC.py` .
 Or submit `TDEC.sh`.
 
 ## Acknowledgement
-We thank for their codes of [(DFKM)](https://github.com/hyzhang98/DFKM) providing NN architecture.
+We thank for their codes of [(DFKM)](https://github.com/hyzhang98/DFKM) that provides NN architecture.
 
