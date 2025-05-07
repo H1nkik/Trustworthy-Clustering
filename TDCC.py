@@ -446,7 +446,12 @@ labels +=1
         
 
 start_time = time.time()
-tdec = DeepEvidentialCMeans(data, labels, [data.shape[0], 128, 80], lam=0.01, type='pairs',alpha=1, beta=1.1, delta2=9, batch_size=128, lr=10**-4)
-tdec.run()
+tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 128, 80], lam=0.01, type='pairs',alpha=1, beta=1.1, delta2=9, batch_size=128, lr=10**-4)
+#For HHAR, 30epochs:
+#tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 300, 80], lam=1, type='simple',alpha=1, beta=1.1, delta2=9, batch_size=256, lr=8e-5)
+#For Isolet, 30epochs
+#tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 300, 80], lam=1, type='simple',alpha=1, beta=1.1, delta2=9, batch_size=512, lr=3e-3)
+
+tdcc.run()
 end_time = time.time()
 print("Time: {:.2f} s".format(end_time - start_time))        
