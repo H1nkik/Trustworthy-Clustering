@@ -433,28 +433,31 @@ class DeepEvidentialCMeans(torch.nn.Module):
         self._update_gplus(Z)
         self._update_M(Z)
               
-            
-# Data: d*n (dimension * number of instances)            
-
-data=  np.load('yale_hog.npy') #165, 288
-data = data.T
-data = torch.from_numpy(data).float()  
-labels=np.zeros(165)
-for i in range(165):
-    labels[i]= int(i/11)
-labels +=1 
-        
-
+                   
 start_time = time.time()
-tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 128, 80], lam=0.01, type='pairs',alpha=1, beta=1.1, delta2=9, batch_size=128, lr=10**-4)
+# Data: d*n (dimension * number of instances) 
+from ucimlrepo import fetch_ucirepo
+isolet = fetch_ucirepo(id=54)
+data = isolet.data.features
+data = np.array(data).T
+labels = isolet.data.targets
+labels = np.reshape(labels, (labels.shape[0],))
+
+#For Isolet, 30epochs:
+tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 300, 80], lam=1, type='simple',alpha=1, beta=1.1, delta2=9, batch_size=512, lr=3e-3)
+
+#For Yale, 20epochs:
+#tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 128, 80], lam=0.01, type='pairs',alpha=1, beta=1.1, delta2=9, batch_size=128, lr=10**-4)
+
 #For HHAR, 30epochs:
 #tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 300, 80], lam=1, type='simple',alpha=1, beta=1.1, delta2=9, batch_size=256, lr=8e-5)
-#For Isolet, 30epochs:
-#tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 300, 80], lam=1, type='simple',alpha=1, beta=1.1, delta2=9, batch_size=512, lr=3e-3)
+
 #For 20news, 20epochs:
 #tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 300, 80], lam=1, type='pairs',alpha=1, beta=1.1, delta2=9, batch_size=512, lr=10**-4)
+
 #For STL-10, 20epochs:
 #tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 300, 80], lam=1, type='pairs',alpha=1, beta=1.1, delta2=9, batch_size=512, lr=10**-4)
+
 #For olive, 20:
 #tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 300, 80], lam=1, type='pairs',alpha=1, beta=1.1, delta2=36, batch_size=256, lr=10**-5)
 
