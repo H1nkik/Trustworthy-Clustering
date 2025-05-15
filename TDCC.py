@@ -440,6 +440,7 @@ from ucimlrepo import fetch_ucirepo
 isolet = fetch_ucirepo(id=54)
 data = isolet.data.features
 data = np.array(data).T
+# data = torch.from_numpy(data).float() #if GPU
 labels = isolet.data.targets
 labels = np.reshape(labels, (labels.shape[0],))
 
