@@ -352,7 +352,7 @@ class DeepEvidentialCMeans(torch.nn.Module):
             pre_label=np.argmax(betp, axis=1) #pignistic transformation
             pre_label=pre_label+1
             nmi, ari,acc,ri= cal_clustering_metric(self.labels, pre_label)
-            print('epoch-{}, loss={}, NMI={}, ARI={},ACC={},RI={}'.format(epoch, loss.item(), nmi, ari,acc,ri))
+            print('epoch-{}, NMI={}, ARI={},ACC={},RI={}'.format(epoch, nmi, ari,acc,ri))
         
 
     def _update_D(self, Z, gplus): #update distance^2 
