@@ -30,7 +30,7 @@ INPUT: dxn matrix
 
 * STL-10 (HOG): This process is shown in [(STL-10)](https://github.com/mttk/STL10).
 
-* Yale (HOG): This process is shown in [(Yale-FaceRecognition)](https://github.com/chenshen03/Yale-FaceRecognition). Raw data is uploaded as "yale_hog.npy".
+* Yale (HOG): This process is shown in [(Yale-FaceRecognition)](https://github.com/chenshen03/Yale-FaceRecognition).
 
 * HHAR: In [(HHAR)](https://github.com/yueliu1999/Awesome-Deep-Graph-Clustering/tree/main/dataset).
 
