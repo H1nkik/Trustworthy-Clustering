@@ -290,10 +290,10 @@ class DeepEvidentialCMeans(torch.nn.Module):
         # J_partition
         loss2 = self.lam/2*(np.nansum((m ** self.beta) * d[:, :self.f - 1] * np.tile(self.card[:self.f - 1] ** self.alpha, (n, 1))) + self.delta2 * np.nansum(mvide[:self.f - 1] ** self.beta))/ n
         
-        loss =loss1+loss2+ 0.00001 * (self.enc1.weight.norm()**2 + self.enc1.bias.norm()**2) / n
-        loss =loss1+loss2+ 0.00001 * (self.enc2.weight.norm()**2 + self.enc2.bias.norm()**2) / n
-        loss =loss1+loss2+ 0.00001 * (self.dec1.weight.norm()**2 + self.dec1.bias.norm()**2) / n
-        loss =loss1+loss2+ 0.00001 * (self.dec2.weight.norm()**2 + self.dec2.bias.norm()**2) / n
+        loss =loss1+loss2+ 0.0001 * (self.enc1.weight.norm()**2 + self.enc1.bias.norm()**2) / n
+        loss =loss1+loss2+ 0.0001 * (self.enc2.weight.norm()**2 + self.enc2.bias.norm()**2) / n
+        loss =loss1+loss2+ 0.0001 * (self.dec1.weight.norm()**2 + self.dec1.bias.norm()**2) / n
+        loss =loss1+loss2+ 0.0001 * (self.dec2.weight.norm()**2 + self.dec2.bias.norm()**2) / n
         return loss
     
     
@@ -330,7 +330,7 @@ class DeepEvidentialCMeans(torch.nn.Module):
         optimizer = torch.optim.Adam(self.parameters(), lr=self.lr)
         scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.8)
         loss = 0
-        for epoch in range(20):
+        for epoch in range(30): #20
             D = self._update_D(Z, self.gplus) #Distance
             for i, batch in enumerate(train_loader):#enumerate
                 x, idx = batch
