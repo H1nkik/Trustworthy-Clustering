@@ -39,9 +39,9 @@ INPUT: dxn matrix
 ## Usage
 We provide a GPU&CPU version for MacOS and Linux (Unknown for Windows).
 
-Just `python TDEC.py` . 
+Just `python TDCC.py` . 
 
-Or submit `TDEC.sh`.
+Or submit `TDCC.sh`.
 
 ## Acknowledgement
 We thank for their codes of [(DFKM)](https://github.com/hyzhang98/DFKM) that provides NN architecture.
