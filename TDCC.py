@@ -449,8 +449,10 @@ tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 300, 80], lam=1, type=
 #For Yale, 20epochs:
 #tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 128, 80], lam=0.01, type='pairs',alpha=1, beta=1.1, delta2=9, batch_size=128, lr=10**-4)
 
-#For HHAR, 30epochs:
-#tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 300, 80], lam=1, type='simple',alpha=1, beta=1.1, delta2=9, batch_size=256, lr=8e-5)
+# For HHAR, 30epochs:
+# data = np.load('hhar_feat.npy').T 
+# labels = np.load('hhar_label.npy')
+# tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 300, 80], lam=1, type='simple',alpha=1, beta=1.1, delta2=9, batch_size=256, lr=8e-5)
 
 #For 20news, 20epochs:
 #tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 300, 80], lam=1, type='pairs',alpha=1, beta=1.1, delta2=9, batch_size=512, lr=10**-4)
