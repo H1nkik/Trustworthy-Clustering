@@ -289,10 +289,8 @@ class DeepEvidentialCMeans(torch.nn.Module):
         loss1 = 1/2 * torch.norm(x - recons_x, p='fro') ** 2 /n
         # J_partition
         loss2 = self.lam/2*(np.nansum((m ** self.beta) * d[:, :self.f - 1] * np.tile(self.card[:self.f - 1] ** self.alpha, (n, 1))) + self.delta2 * np.nansum(mvide[:self.f - 1] ** self.beta))/ n
-        
-        loss =loss1+loss2+ 0.0001 * (self.enc1.weight.norm()**2 + self.enc1.bias.norm()**2) / n
-        loss =loss1+loss2+ 0.0001 * (self.enc2.weight.norm()**2 + self.enc2.bias.norm()**2) / n
-        loss =loss1+loss2+ 0.0001 * (self.dec1.weight.norm()**2 + self.dec1.bias.norm()**2) / n
+    
+        #loss =loss1+loss2+ 0.0001 * (self.enc1.weight.norm()**2 + self.enc1.bias.norm()**2+self.dec1.weight.norm()**2 + self.dec1.bias.norm()**2+self.enc2.weight.norm()**2 + self.enc2.bias.norm()**2+self.dec2.weight.norm()**2 + self.dec2.bias.norm()**2) / n
         loss =loss1+loss2+ 0.0001 * (self.dec2.weight.norm()**2 + self.dec2.bias.norm()**2) / n
         return loss
     
