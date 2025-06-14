@@ -460,7 +460,7 @@ tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 300, 80], lam=1, type=
 #tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 300, 80], lam=1, type='pairs',alpha=1, beta=1.1, delta2=9, batch_size=512, lr=10**-4)
 
 #For olive, 20:
-#tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 300, 80], lam=1, type='pairs',alpha=1, beta=1.1, delta2=36, batch_size=256, lr=10**-5)
+#tdcc = DeepEvidentialCMeans(data, labels, [data.shape[0], 300, 80], lam=1, type='pairs',alpha=1, beta=1.1, delta2=9, batch_size=256, lr=10**-5)
 
 tdcc.run()
 end_time = time.time()
