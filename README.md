@@ -37,6 +37,7 @@ INPUT: dxn matrix
 * Others: Shown in `Data process.ipynb`.
 
 **Ablation**
+
 Please see `TDCC-SSE.ipynb`. The Gaussian datasets is here [(G2)](http://cs.uef.fi/sipu/datasets/).
 
 ## Usage
