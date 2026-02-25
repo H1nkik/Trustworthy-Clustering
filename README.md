@@ -50,3 +50,20 @@ Or submit `TDCC.sh`.
 ## Acknowledgement
 We thank for their codes of [(DFKM)](https://github.com/hyzhang98/DFKM) that provides NN architecture.
 
+## Citation
+
+If you find MvWECM useful in your research, please consider citing:
+
+**BibTeX**
+```bibtex
+@article{zhu2026,
+  title        = {TDCC: A Trustworthy Deep Credal Clustering Method for Uncertain Data},
+  author       = {Yuchen Zhu and Kuang Zhou and Fabio Cuzzolin},
+  journal=      {IEEE Transactions on Cybernetics},
+  year={2026},
+  volume={},
+  number={},
+  pages={}
+}
+
+
