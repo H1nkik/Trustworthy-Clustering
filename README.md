@@ -52,7 +52,7 @@ We thank for their codes of [(DFKM)](https://github.com/hyzhang98/DFKM) that pro
 
 ## Citation
 
-If you find MvWECM useful in your research, please consider citing:
+If you find TDCC useful in your research, please consider citing:
 
 **BibTeX**
 ```bibtex
